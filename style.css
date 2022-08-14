@@ -211,8 +211,88 @@ table {
   cursor: pointer;
 }
 
+/*********************************************************/
+/* Content */
+/*********************************************************/
+
 .content {
   grid-area: 2 / 2 / 3 / 3;
   background: lavender;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
+/*********************************************************/
+/* Projects */
+/*********************************************************/
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem 0.75rem 1rem;
+}
+
+.projects-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.project-cards {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: white;
+  border-left: 0.5rem solid gold;
+}
+
+.card .title {
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-bottom: 0.25rem;
+  height: min-content;
+}
+
+.card p {
+  overflow: auto;
+  text-overflow: clip;
+  color: gray;
+  font-weight: 300;
+  flex: 100%;
+}
+
+.card-actions {
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: end;
+  align-self: end;
+  gap: 2rem;
+}
+
+/*********************************************************/
+/* Social */
+/*********************************************************/
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.announcements {
+  background: lightgoldenrodyellow;
+  flex: 50%;
+}
+
+.trending {
+  background: lightgrey;
+  flex: 50%;
+}
