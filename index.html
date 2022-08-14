@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
   <link rel="stylesheet" href="style.css">
   <title>Odin Admin Dashboard</title>
 </head>
@@ -27,11 +27,32 @@
       </div>
     </div>
     <div class="header">
-      <div class="search-bar"></div>
-      <div class="user-actions"></div>
+      <div class="search-bar">
+        <div class='form-item'>
+          <label for='search'><i class="material-icons">search</i></label>
+          <input id='search' name='search' type='text'/>
+        </div>
+        <div class="account">
+          <span class="material-icons-outlined">notifications_active</span>
+          <div class="small-avatar"></div>
+          Tartempionne Latulipe
+        </div>
+      </div>
+      <div class="user-actions">
+        <div class="welcome">
+          <div class="avatar"></div>
+          <div class="message">Hi there,</div>
+          <div class="username">Tartempionne Latulipe (@tarte)</div>
+        </div>
+        <div class="button-strip">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </div>
     </div>
     <div class="content">
-      <div class="grid-projects"></div>
+      <div class="projects"></div>
       <div class="social"></div>
     </div>
   </div>
